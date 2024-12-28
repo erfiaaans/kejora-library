@@ -9,26 +9,26 @@
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="admin.php">Home</a>
+          <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'admin.php' ? 'active' : ''; ?>" aria-current="page" href="admin.php" style="font-weight: bold;">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="users.php"">User</a>
+          <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'users.php' ? 'active' : ''; ?>" href="users.php" style="font-weight: bold;">User</a>
           </li>
           <li class=" nav-item">
-            <a class="nav-link" href="buku.php">Daftar Buku</a>
+            <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'buku.php' ? 'active' : ''; ?>" href="buku.php" style="font-weight: bold;">Daftar Buku</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="peminjamanBuku.php">Peminjaman Buku</a>
+          <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'peminjamanBuku.php' ? 'active' : ''; ?>" href="peminjamanBuku.php" style="font-weight: bold;">Peminjaman Buku</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pengembalianBuku.php">Pengembalian Buku</a>
+          <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'pengembalianBuku.php' ? 'active' : ''; ?>" href="pengembalianBuku.php" style="font-weight: bold;">Pengembalian Buku</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="denda.php">Denda</a>
+          <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'denda.php' ? 'active' : ''; ?>" href="denda.php" style="font-weight: bold;">Denda</a>
         </li>
       </ul>
-
     </div>
+
     <div class="dropdown">
       <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
         <img src="../assets/img/admin.png" alt="adminLogo" width="40px">

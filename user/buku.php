@@ -96,7 +96,7 @@ $kategori = queryReadData("SELECT kategori FROM kategori_buku");
 
   </div>
 
-  <footer class="bg-dark text-light shadow-lg bg-subtle p-2">
+  <footer class="bg-warning-subtle text-dark shadow-lg bg-subtle p-2">
     <div class="container-fluid d-flex justify-content-between">
       <p class="mt-2">Created by <span class="text-primary"> Kejora</span> © 2024</p>
       <p class="mt-2">versi 1.0</p>

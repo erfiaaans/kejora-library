@@ -3,25 +3,31 @@
     <a class="navbar-brand" href="#">
       <img src="../assets/img/fontkejora.png" alt="logo" width="120px">
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarText">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="user.php">Home</a>
+          <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'user.php' ? 'active' : ''; ?>" aria-current="page"
+            href="user.php" style="font-weight: bold;">Home</a>
+        </li>
+        <li class=" nav-item">
+          <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'buku.php' ? 'active' : ''; ?>" href="buku.php"
+            style="font-weight: bold;">Daftar Buku</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="buku.php"">Buku</a>
-          </li>
-          <li class=" nav-item">
-            <a class="nav-link" href="peminjaman.php">Peminjaman</a>
+          <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'peminjaman.php' ? 'active' : ''; ?>"
+            href="peminjaman.php" style="font-weight: bold;">Peminjaman Buku</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="pengembalian.php">Pengembalian</a>
+          <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'pengembalian.php' ? 'active' : ''; ?>"
+            href="pengembalian.php" style="font-weight: bold;">Pengembalian Buku</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="denda.php">Denda</a>
+          <a class="nav-link <?= basename($_SERVER['PHP_SELF']) == 'denda.php' ? 'active' : ''; ?>" href="denda.php"
+            style="font-weight: bold;">Denda</a>
         </li>
       </ul>
 

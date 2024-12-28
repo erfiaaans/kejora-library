@@ -61,13 +61,13 @@ VALUES
   (
     '654e505d7eda4.jpg',
     'bis01',
-    'Bisnis',
+    'komik',
     'Bussiness is fun',
     'Coach yohannes g pauly',
     'Rejove',
     '2016-11-10',
     500,
-    '7 strategi untuk membangun bisnis'
+    '7 strategi untuk membangun komik'
   ),
   (
     '654e4dc4dc0c6.jpg',
@@ -89,7 +89,7 @@ VALUES
     'Inkara',
     '2023-10-18',
     414,
-    'Website di era sekarang sudah menjadi kebutuhan utama yang tidak bisa diabaikan. Seluruh sektor bisnis atau edukasi dapat memanfaatkan website sebagai alat untuk promosi, tukar informasi, dan lainnya. Berdasarkan data dari World Wide Web Technology Surveys, dari seluruh website yang aktif, 88.2% menggunakan HTML dan 95.6% menggunakan CSS. Buku ini membahas tuntas mengenai HTML dan CSS sebagai fondasi dalam pembuatan website serta dilengkapi dengan Studi Kasus yang Relevan dan sesuai trend.'
+    'Website di era sekarang sudah menjadi kebutuhan utama yang tidak bisa diabaikan. Seluruh sektor komik atau edukasi dapat memanfaatkan website sebagai alat untuk promosi, tukar informasi, dan lainnya. Berdasarkan data dari World Wide Web Technology Surveys, dari seluruh website yang aktif, 88.2% menggunakan HTML dan 95.6% menggunakan CSS. Buku ini membahas tuntas mengenai HTML dan CSS sebagai fondasi dalam pembuatan website serta dilengkapi dengan Studi Kasus yang Relevan dan sesuai trend.'
   ),
   (
     '654e4b44d4d0e.png',
@@ -149,7 +149,7 @@ CREATE TABLE
 INSERT INTO
   `kategori_buku` (`kategori`)
 VALUES
-  ('Bisnis'),
+  ('komik'),
   ('Filsafat'),
   ('Informatika'),
   ('Novel'),

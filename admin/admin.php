@@ -27,7 +27,7 @@ if (!isset($_SESSION["signIn"])) {
   <div class="mt-5 p-4">
     <h1 class="mt-5 fw-bold">Dashboard - <span class="fs-4 text-secondary"> <?php echo date('l d F Y'); ?> </span></h1>
 
-    <div class="alert alert-success" role="alert">Selamat datang admin - <span class="fw-bold text-capitalize"><?php echo $_SESSION['admin']['nama_admin']; ?></span> di Dashboard Kejora Library</div>
+    <div class="bg-warning-subtle alert" role="alert">Selamat datang admin - <span class="fw-bold text-capitalize"><?php echo $_SESSION['admin']['nama_admin']; ?></span> di Dashboard Kejora Library</div>
 
     <div class="mt-4 p-3">
 
@@ -64,13 +64,6 @@ if (!isset($_SESSION["signIn"])) {
     </div>
 
   </div>
-
-  <footer class="bg-dark text-light shadow-lg bg-subtle p-2">
-    <div class="container-fluid d-flex justify-content-between">
-      <p class="mt-2">Created by <span class="text-primary"> Kejora</span> © 2024</p>
-      <p class="mt-2">versi 1.0</p>
-    </div>
-  </footer>
 
   <script src="../assets/bootstrap/bootstrap.bundle.min.js"></script>
 </body>

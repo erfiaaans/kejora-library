@@ -57,7 +57,7 @@ $kategori = queryReadData("SELECT kategori FROM kategori_buku");
       <form action="" method="post" class="d-flex">
         <div class="layout-card-custom">
           <button
-            class="btn btn-outline-info <?= (!isset($_POST['kategori']) || $_POST['kategori'] == '') ? 'active' : ''; ?>"
+            class="btn btn-outline-warning <?= (!isset($_POST['kategori']) || $_POST['kategori'] == '') ? 'active' : ''; ?>"
             type="submit"
             name="kategori"
             value="">
@@ -68,7 +68,7 @@ $kategori = queryReadData("SELECT kategori FROM kategori_buku");
               type="submit"
               name="kategori"
               value="<?= $item['kategori']; ?>"
-              class="btn btn-outline-info <?= (isset($_POST['kategori']) && $_POST['kategori'] == $item['kategori']) ? 'active' : ''; ?>">
+              class="btn btn-outline-warning  <?= (isset($_POST['kategori']) && $_POST['kategori'] == $item['kategori']) ? 'active' : ''; ?>">
               <?= ucfirst($item['kategori']); ?>
             </button>
           <?php endforeach; ?>

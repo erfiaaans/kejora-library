@@ -44,7 +44,8 @@ $kategori = queryReadData("SELECT kategori FROM kategori_buku");
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1.5rem;
+    gap: 1.5rem;         
+    
   }
 </style>
 
@@ -56,11 +57,11 @@ $kategori = queryReadData("SELECT kategori FROM kategori_buku");
       <a class="btn btn-primary" href="bukuTambah.php">Tambah Buku</a>
     </div>
     <hr>
-    <div class="d-flex justify-content-between align-items-center m-5 mt-2">
+    <div class=" d-flex justify-content-between align-items-center m-5 mt-2">
       <form action="" method="post" class="d-flex">
-        <div class="layout-card-custom">
+        <div class="layout-card-custom ">
           <button
-            class="btn btn-outline-info <?= (!isset($_POST['kategori']) || $_POST['kategori'] == '') ? 'active' : ''; ?>"
+            class="btn btn-outline-warning <?= (!isset($_POST['kategori']) || $_POST['kategori'] == '') ? 'active' : ''; ?>"
             type="submit"
             name="kategori"
             value="">
@@ -71,7 +72,7 @@ $kategori = queryReadData("SELECT kategori FROM kategori_buku");
               type="submit"
               name="kategori"
               value="<?= $item['kategori']; ?>"
-              class="btn btn-outline-info <?= (isset($_POST['kategori']) && $_POST['kategori'] == $item['kategori']) ? 'active' : ''; ?>">
+              class="btn btn-outline-warning <?= (isset($_POST['kategori']) && $_POST['kategori'] == $item['kategori']) ? 'active' : ''; ?>">
               <?= ucfirst($item['kategori']); ?>
             </button>
           <?php endforeach; ?>

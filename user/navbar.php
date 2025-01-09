@@ -1,4 +1,4 @@
-<nav class="navbar fixed-top bg-body-tertiary shadow-sm navbar-expand-lg bg-body-tertiary">
+<nav class="navbar fixed-top bg-warning-subtle shadow-sm navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid p-3">
     <a class="navbar-brand" href="#">
       <img src="../assets/img/fontkejora.png" alt="logo" width="120px">
